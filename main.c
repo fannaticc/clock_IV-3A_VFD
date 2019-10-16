@@ -66,8 +66,6 @@ void main(void)
     // initialize the device
     SYSTEM_Initialize();
     
-    BUTTONS_ANS = 0;
-    
     TMR0_SetInterruptHandler(display_care);
     TMR1_SetInterruptHandler(boost_care);
     //ADC_SetInterruptHandler(adc_care);
